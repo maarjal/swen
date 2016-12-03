@@ -28,7 +28,6 @@ h1 {
 
 nav {
   height: 92px;
-  background: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
   /*border: 2px solid hotpink;*/
@@ -137,6 +136,9 @@ button {
   .wrap {
     min-width: 400px;
     margin: 0 auto; } }
+i {
+  color: white; }
+
 .box {
   /*height: 10em;*/
   height: auto;
