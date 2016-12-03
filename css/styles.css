@@ -40,6 +40,7 @@ nav {
   /*border: 2px solid hotpink;*/
   display: flex;
   justify-content: space-between;
+  padding: 2%;
 }
 
 .links {
@@ -80,6 +81,8 @@ header {
 header h1 {
   color: white;
   font-size: 4em;
+  text-align: center;
+  /*margin: 0 auto;*/
 }
 
 header button {
@@ -128,11 +131,34 @@ h2 {
 }
 
 .row-supported {
+  /*height: 30em;*/
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
 
 .icons {
+  padding: 6%;
+  margin: 0 auto;
+  /*border: 2px solid red;*/
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons img, i {
+  padding-right: 3%;
+  /*border: 2px solid blue;*/
+}
+
+.icons img {
+  width: 8%;
+}
+
+.row-questions {
+  text-align: center;
+  border: 2px solid hotpink;
   margin: 0 auto;
 }
