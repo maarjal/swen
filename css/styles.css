@@ -16,7 +16,7 @@ body {
 
 .wrap {
   width: 100%;
-  border: 2px solid tomato;
+  /*border: 2px solid tomato;*/
   margin: 0 auto;
   /*display: flex;*/
 }
@@ -37,7 +37,7 @@ h1 {
 nav {
   color: white;
   display: flex;
-  border: 2px solid hotpink;
+  /*border: 2px solid hotpink;*/
   display: flex;
   justify-content: space-between;
 }
@@ -98,9 +98,41 @@ header button {
 }
 
 .row {
-  border: 2px solid purple;
+  /*border: 2px solid purple;*/
+  display: flex;
+}
+
+h3 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  /*margin: 0 auto;*/
+  padding-top: 2%;
 }
 
 .content {
   width: 50%;
+  padding: 2%;
+  /*border: 2px solid tomato;*/
+}
+
+.img {
+  width: 50%;
+  height: 20em;
+  background: url('../img/swhen.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.row-supported {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.icons {
+  margin: 0 auto;
 }
