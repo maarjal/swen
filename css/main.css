@@ -6,7 +6,7 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -21,10 +21,14 @@ body {
 
 h1 {
   color: white;
+  font-size: 400%;
   /*font-size: 2em;*/
   color: red;
-  margin: 0 auto;
-  padding-bottom: 2%; }
+  margin: 0 auto; }
+
+h2 {
+  color: white;
+  font-size: 300%; }
 
 nav {
   height: 92px;
@@ -83,7 +87,6 @@ header {
 
 header h1 {
   color: white;
-  font-size: 300%;
   text-align: center;
   /*margin: 0 auto;*/ }
 
