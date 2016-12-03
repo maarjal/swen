@@ -24,9 +24,11 @@ h1 {
   font-size: 400%;
   /*font-size: 2em;*/
   color: red;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-weight: normal; }
 
 h2 {
+  font-weight: normal;
   color: white;
   font-size: 300%; }
 
