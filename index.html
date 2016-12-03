@@ -5,21 +5,30 @@
     <title>Swen</title>
     <script src="https://use.fontawesome.com/cd2d23a162.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <div class="wrap">
       <div class="header">
-        <nav>
+        <nav class="main-menu">
           <!-- <img src="img/logo1.png" alt="Swhen logo"> -->
           <img src="img/swhen-01.svg" alt="Swhen logo">
-          <div class="links">
+          <div class="nav-links">
             <p>Home</p>
-            <p>Features</p>
-            <p>About US</p>
+            <p>About</p>
             <p>Contact</p>
           </div>
         </nav>
+        <div class="nav-small">
+         <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+         <nav id="navigation1" class="navigation">
+           <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Contact</a></li>
+           </ul>
+         </nav>
+       </div>
         <header>
           <div class="header-content">
 
@@ -102,14 +111,10 @@
           <button type="button" name="button">Start tracking with</button>
           <div class="icons">
             <i class="fa fa-facebook fa-4x" aria-hidden="true"></i>
-            <i class="fa fa-commenting-o fa-4x" aria-hidden="true"></i>
             <i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
             <i class="fa fa-paper-plane-o fa-4x" aria-hidden="true"></i>
             <i class="fa fa-slack fa-4x" aria-hidden="true"></i>
             <i class="fa fa-skype fa-4x" aria-hidden="true"></i>
-            <img src="img/magic.png" alt="Spark icon">
-            <img src="img/kik.png" alt="Kik icon">
-            <img src="img/line.png" alt="Line icon">
           </div>
         </div>
         <div class="row faq">

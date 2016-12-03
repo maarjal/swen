@@ -1,0 +1,303 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  height: 45em; }
+
+.wrap {
+  width: 100%;
+  /*border: 2px solid tomato;*/
+  margin: 0 auto;
+  /*display: flex;*/ }
+
+h1 {
+  color: white;
+  /*font-size: 2em;*/
+  color: red;
+  margin: 0 auto;
+  padding-bottom: 2%; }
+
+nav {
+  height: 92px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  /*border: 2px solid hotpink;*/
+  align-items: center;
+  justify-content: space-between;
+  /*padding: 2%;*/
+  padding: 0 2%; }
+
+.main-menu {
+  border: 2px solid red; }
+
+nav img {
+  width: 15%; }
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
+  /*border: 2px solid purple;*/ }
+
+.nav-links {
+  border: 2px solid purple;
+  display: flex; }
+  .nav-links p {
+    padding-right: 2%;
+    margin-right: 2%; }
+
+.links p {
+  padding-right: 3%;
+  margin-right: 2%;
+  /*border: 2px solid hotpink;*/
+  display: flex;
+  align-items: center;
+  width: auto; }
+
+nav p {
+  padding-left: 2%;
+  font-size: 1.3em; }
+
+header {
+  opacity: 0.8;
+  height: 40em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.header {
+  background: url("../img/taust.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  /*align-items: stretch;*/ }
+
+header h1 {
+  color: white;
+  font-size: 300%;
+  text-align: center;
+  /*margin: 0 auto;*/ }
+
+header button, button {
+  font-size: 1em;
+  width: 10em;
+  height: 3em;
+  margin: 2% auto; }
+
+.intro {
+  font-size: 1.3em;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.row {
+  /*border: 2px solid purple;*/
+  display: flex;
+  width: 80%;
+  margin: 1% auto;
+  padding-bottom: 2%; }
+
+.row-first .box {
+  height: 10em;
+  border: 2px solid hotpink; }
+
+.box-content {
+  margin: 0 auto;
+  width: 30%;
+  border: none;
+  border: 2px solid blue; }
+
+@media screen and (max-width: 700px) {
+  .box-content {
+    width: 100%;
+    min-width: 400px;
+    /*min-width: 400px;
+    display: flex;
+    flex-direction: column;*/ }
+
+  .row {
+    flex-direction: column; }
+
+  .main-content {
+    margin: 0 auto; }
+
+  .wrap {
+    margin: 0 auto; } }
+.box {
+  /*height: 10em;*/
+  height: auto;
+  margin: 6% auto;
+  text-align: justify;
+  padding: 2%; }
+
+.box-text {
+  height: auto; }
+
+h3 {
+  text-align: center; }
+
+h2 {
+  text-align: center;
+  /*margin: 0 auto;*/
+  padding-top: 2%; }
+
+.content {
+  width: 50%;
+  padding: 2%;
+  /*border: 2px solid tomato;*/ }
+
+.main-content {
+  margin-top: 3%; }
+
+.img {
+  width: 50%;
+  height: 20em;
+  background: url("../img/swhen.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.row-supported {
+  /*height: 30em;*/
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+
+.icons {
+  padding: 6%;
+  margin: 0 auto;
+  /*border: 2px solid red;*/
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+i, .icons img {
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s; }
+
+i:hover, .icons img:hover {
+  cursor: pointer;
+  -webkit-tranform: scale(1.3);
+  -moz-transform: scale(1.3);
+  transform: scale(1.3); }
+
+.icons img, i {
+  padding-right: 3%;
+  /*border: 2px solid blue;*/ }
+
+.icons img {
+  width: 8%; }
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*border: 2px solid hotpink;*/
+  margin: 0 auto;
+  padding-bottom: 3%; }
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none; }
+
+  nav img {
+    width: 25%; } }
+li {
+  list-style: none; }
+  li a {
+    color: white;
+    padding-right: 3%; }
+
+.nav-small {
+  padding-top: 3%;
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 70%; }
+  @media screen and (max-width: 700px) {
+    .nav-small {
+      display: block; } }
+  @media screen and (max-width: 700px) {
+    .nav-small {
+      position: absolute;
+      top: 2%;
+      left: 83%; } }
+
+.burger {
+  color: lightgrey;
+  display: inline-block;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out; }
+  .burger::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  .burger:before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+  .burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+
+.burger-check {
+  display: none; }
+
+.burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out; }
+  .burger-check:checked ~ .burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+  .burger-check:checked ~ .burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out; }
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in-out; }
+
+/*# sourceMappingURL=main.css.map */

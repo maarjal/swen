@@ -44,6 +44,10 @@ nav {
   padding: 0 2%;
 }
 
+.main-menu {
+  border: 2px solid red;
+}
+
 nav img {
   width: 15%;
 }
@@ -53,6 +57,15 @@ nav img {
   justify-content: flex-end;
   width: 70%;
   /*border: 2px solid purple;*/
+}
+
+.nav-links {
+  border: 2px solid purple;
+  display: flex;
+  & p {
+    padding-right: 2%;
+    margin-right: 2%;
+  }
 }
 
 .links p {
@@ -132,7 +145,7 @@ header button, button {
   border: 2px solid blue;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .box-content {
     width: 100%;
     min-width: 400px;
@@ -143,9 +156,17 @@ header button, button {
   .row {
     flex-direction: column;
   }
-  i {
-    font-size: 1.5em;
+  .main-content {
+    // width: 95%;
+    margin: 0 auto;
   }
+  .wrap {
+    margin: 0 auto;
+  }
+
+  // i {
+  //   font-size: 1.5em;
+  // }
 }
 
 .box {
@@ -236,4 +257,120 @@ i:hover, .icons img:hover {
   /*border: 2px solid hotpink;*/
   margin: 0 auto;
   padding-bottom: 3%;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links {
+    display: none;
+  }
+  nav img {
+    width: 25%;
+  }
+}
+
+// BURGER
+
+li {
+  list-style: none;
+  & a {
+    color: white;
+    padding-right: 3%;
+  }
+}
+
+.nav-small {
+  padding-top: 3%;
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+  @media screen and (max-width: 700px) {
+    position: absolute;
+    top: 2%;
+    left: 83%;
+  }
+}
+
+// Burger menu button
+$burger--thickness: 4px;
+.burger {
+  color: lightgrey;
+	$width: 28px;
+	display: inline-block;
+  border: 0;
+	background: none;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+	border-bottom: $burger--thickness solid currentColor;
+	width: $width;
+	transition: border-bottom 1s ease-in-out;
+	-webkit-transition: border-bottom 1s ease-in-out;
+
+	// Fix for extra space in Firefox
+	&::-moz-focus-inner {
+		border: 0;
+		padding: 0;
+	}
+
+	&:before {
+		content: "";
+		display: block;
+		border-bottom: $burger--thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	}
+
+	&:after {
+		content: "";
+		display: block;
+		border-bottom: $burger--thickness solid currentColor;
+		width: 100%;
+		margin-bottom: 5px;
+		transition: transform 0.5s ease-in-out;
+		-webkit-transition: -webkit-transform 0.5s ease-in-out;
+	}
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: $burger--thickness solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+
+  &:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+
+  &:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  }
+}
+
+// * * * Navigation * * *
+$navigation__transition: max-height 0.5s ease-in-out;
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  transition: $navigation__transition;
+}
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+  transition: $navigation__transition;
 }
