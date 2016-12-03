@@ -85,7 +85,7 @@ header h1 {
   /*margin: 0 auto;*/
 }
 
-header button {
+header button, button {
   font-size: 1em;
   width: 10em;
   height: 3em;
@@ -103,6 +103,22 @@ header button {
 .row {
   /*border: 2px solid purple;*/
   display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2%;
+}
+
+.row-first .box {
+  height: 10em;
+  border: 2px solid hotpink;
+}
+
+.box {
+  width: 30%;
+  /*height: 10em;*/
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
 }
 
 h3 {
@@ -157,8 +173,11 @@ h2 {
   width: 8%;
 }
 
-.row-questions {
+.faq {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  border: 2px solid hotpink;
+  /*border: 2px solid hotpink;*/
   margin: 0 auto;
+  padding-bottom: 3%;
 }
