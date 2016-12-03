@@ -37,9 +37,6 @@ nav {
   /*padding: 2%;*/
   padding: 0 2%; }
 
-.main-menu {
-  border: 2px solid red; }
-
 nav img {
   width: 15%; }
 
@@ -50,7 +47,6 @@ nav img {
   /*border: 2px solid purple;*/ }
 
 .nav-links {
-  border: 2px solid purple;
   display: flex; }
   .nav-links p {
     padding-right: 2%;
@@ -183,13 +179,17 @@ h2 {
 .icons {
   padding: 6%;
   margin: 0 auto;
-  /*border: 2px solid red;*/
+  border: 2px solid red;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center; }
 
-i, .icons img {
+i {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  border: 2px solid hotpink;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s; }
