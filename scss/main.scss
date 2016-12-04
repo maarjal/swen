@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Archivo Narrow', sans-serif;
+  font-weight: light;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -24,25 +25,16 @@ body {
 
 
 
-h1 {
-  color: white;
-  font-size: 400%;
-  /*font-size: 2em;*/
-  color: red;
-  margin: 0 auto;
-  font-weight: normal;
-  // font-size: 3em;
-}
-
-h2 {
-  font-weight: normal;
-  color: white;
-  font-size: 300%;
-}
+// h1 {
+//   color: white;
+//   color: red;
+//   margin: 0 auto;
+//   padding-bottom: 2%;
+// }
 
 nav {
   height: 92px;
-  // background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
   /*border: 2px solid hotpink;*/
@@ -50,6 +42,7 @@ nav {
   justify-content: space-between;
   /*padding: 2%;*/
   padding: 0 2%;
+  padding-right: 0;
 }
 
 
@@ -58,18 +51,34 @@ nav img {
   width: 15%;
 }
 
-.links {
-  display: flex;
-  justify-content: flex-end;
-  width: 70%;
-  /*border: 2px solid purple;*/
-}
+// .links {
+//   display: flex;
+//   justify-content: flex-end;
+//   width: 70%;
+// }
 
 .nav-links {
   display: flex;
+  justify-content: center;
+  padding-right: 0;
+  margin-right: 0;
+  // align-items: flex-end;
+  width: 25%;
+  border: 2px solid red;
   & p {
-    padding-right: 2%;
-    margin-right: 2%;
+    display: flex;
+    // align-items: flex-start;
+    // justify-content: center;
+    color: white;
+    padding-right: 5%;
+    margin-right: 6%;
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+  & a {
+    color: red;
   }
 }
 
@@ -77,23 +86,29 @@ nav img {
   padding-right: 3%;
   margin-right: 2%;
   /*border: 2px solid hotpink;*/
-  display: flex;
-  align-items: center;
-  width: auto;
+  // display: flex;
+  // align-items: center;
+  // width: auto;
 }
 
 nav p {
-  padding-left: 2%;
-  font-size: 1.3em;
+  // padding-left: 2%;
+  font-size: 1em;
 }
 
 header {
   opacity: 0.8;
-  height: 40em;
+  height: 35em;
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 }
+
+
 
 .header {
   background: url('../img/taust.png');
@@ -102,17 +117,18 @@ header {
   background-size: cover;
 }
 
-.header-content {
-  display: flex;
-  flex-direction: column;
-  /*align-items: stretch;*/
+// .header-content {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-end;
+//
+// }
+h1 {
+  color: white;
+  font-size: 50px;
+  // text-align: center;
 }
 
-header h1 {
-  color: white;
-  text-align: center;
-  /*margin: 0 auto;*/
-}
 
 button {
   border: 2px solid white;
@@ -182,10 +198,6 @@ button {
   // }
 }
 
-i {
-  color: white;
-}
-
 .box {
   /*height: 10em;*/
   height: auto;
@@ -203,10 +215,15 @@ h3 {
 }
 
 h2 {
-  text-align: center;
-  /*margin: 0 auto;*/
-  padding-top: 2%;
+  color: white;
+  font-size: 36px;
 }
+
+// h2 {
+//   text-align: center;
+//
+//   padding-top: 2%;
+// }
 
 .content {
   width: 50%;
@@ -218,34 +235,60 @@ h2 {
   margin-top: 3%;
 }
 
-.img {
-  width: 50%;
-  height: 20em;
-  background: url('../img/swhen.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
+// .img {
+//   width: 50%;
+//   height: 20em;
+//   background: url('../img/swhen.png');
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
+// }
 
 .row-supported {
-  /*height: 30em;*/
-  width: 100%;
-  margin: 0 auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  /*height: 30em;*/
+  // width: 100%;
+  width: 50%;
+  margin: 0 auto;
+  // display: flex;
+  // flex-direction: column;
+  border: 2px solid purple;
+  position: absolute;
+  bottom: 0;
+  transform: translateX(0, -50%);
+  // left: 7%;
 }
 
 .icons {
-  // padding: 6%;
-  margin: 3% auto;
-  text-align: center;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: center;
-  & p {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  width: 50%;
+  height: 7em;
+  // height: auto;
+  // background: rgba(255, 255, 255, 0.5);
+  // border-top-right-radius: 2em;
+  // border-top-left-radius: 2em;
+  padding: 0;
+
+  & img {
+    margin: 0 auto;
+    // padding-top: 1%;
+    // padding-bottom: 1%;
+    width: 66px;
+    height: 66px;
     display: flex;
     align-items: center;
-    margin-right: 3%;
+
+    &:last-child {
+      color: pink;
+      margin-right: 0;
+    }
   }
 }
 
@@ -262,14 +305,9 @@ i:hover {
   transform: scale(1.3);
 }
 
-.icons img, i {
-  padding-right: 3%;
-  /*border: 2px solid blue;*/
-}
 
-.icons img {
-  width: 8%;
-}
+
+
 
 .faq {
   display: flex;
