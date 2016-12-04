@@ -18,21 +18,22 @@ body {
 
 .wrap {
   width: 100%;
-  /*border: 2px solid tomato;*/
-  margin: 0 auto;
-  /*display: flex;*/ }
+  margin: 0 auto; }
 
 nav {
   height: 92px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
-  /*border: 2px solid hotpink;*/
   align-items: center;
   justify-content: space-between;
-  /*padding: 2%;*/
   padding: 0 2%;
   padding-right: 0; }
+
+nav a {
+  text-decoration: none;
+  padding-right: 5%;
+  margin-right: 6%; }
 
 nav img {
   width: 15%; }
@@ -56,8 +57,7 @@ nav img {
 
 .links p {
   padding-right: 3%;
-  margin-right: 2%;
-  /*border: 2px solid hotpink;*/ }
+  margin-right: 2%; }
 
 nav p {
   font-size: 1em; }
@@ -119,10 +119,7 @@ button {
 @media screen and (max-width: 800px) {
   .box-content {
     width: 100%;
-    min-width: 400px;
-    /*min-width: 400px;
-    display: flex;
-    flex-direction: column;*/ }
+    min-width: 400px; }
 
   .row {
     flex-direction: column; }
@@ -158,7 +155,6 @@ button {
   line-height: 1.1em; }
 
 .box {
-  /*height: 10em;*/
   height: auto;
   margin: 6% auto;
   text-align: justify;
@@ -179,8 +175,7 @@ h2 {
 
 .content {
   width: 50%;
-  padding: 2%;
-  /*border: 2px solid tomato;*/ }
+  padding: 2%; }
 
 .main-content {
   margin-top: 3%; }
@@ -191,7 +186,6 @@ h2 {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  /*height: 30em;*/
   width: 50%;
   position: absolute;
   bottom: 0;
@@ -275,7 +269,6 @@ i:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /*border: 2px solid hotpink;*/
   margin: 0 auto;
   padding-bottom: 3%; }
 

@@ -21,57 +21,38 @@ body {
 
 .wrap {
   width: 100%;
-  /*border: 2px solid tomato;*/
   margin: 0 auto;
-  /*display: flex;*/
 }
-
-
-
-// h1 {
-//   color: white;
-//   color: red;
-//   margin: 0 auto;
-//   padding-bottom: 2%;
-// }
 
 nav {
   height: 92px;
   background: rgba(0, 0, 0, 0.5);
   color: white;
   display: flex;
-  /*border: 2px solid hotpink;*/
   align-items: center;
   justify-content: space-between;
-  /*padding: 2%;*/
   padding: 0 2%;
   padding-right: 0;
 }
 
-
+nav a {
+  text-decoration: none;
+  padding-right: 5%;
+  margin-right: 6%;
+}
 
 nav img {
   width: 15%;
 }
-
-// .links {
-//   display: flex;
-//   justify-content: flex-end;
-//   width: 70%;
-// }
 
 .nav-links {
   display: flex;
   justify-content: center;
   padding-right: 0;
   margin-right: 0;
-  // align-items: flex-end;
   width: 25%;
-  // border: 2px solid red;
   & p {
     display: flex;
-    // align-items: flex-start;
-    // justify-content: center;
     color: white;
     padding-right: 5%;
     margin-right: 6%;
@@ -88,14 +69,9 @@ nav img {
 .links p {
   padding-right: 3%;
   margin-right: 2%;
-  /*border: 2px solid hotpink;*/
-  // display: flex;
-  // align-items: center;
-  // width: auto;
 }
 
 nav p {
-  // padding-left: 2%;
   font-size: 1em;
 }
 
@@ -111,8 +87,6 @@ header {
   text-align: center;
 }
 
-
-
 .header {
   width: 100%;
   background: url('../img/landing_valgega.png');
@@ -121,18 +95,10 @@ header {
   background-size: cover;
 }
 
-// .header-content {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: flex-end;
-//
-// }
 h1 {
   color: white;
   font-size: 50px;
-  // text-align: center;
 }
-
 
 button {
   border: 2px solid white;
@@ -141,15 +107,9 @@ button {
   font-size: 1.3em;
   max-width: 250px;
   min-height: 75px;
-  // width: 15%;
-  // height: 3em;
   padding: 1.6%;
   margin: 0 auto;
   margin-top: 0.7em;
-  // margin: 0 auto;
-  // -webkit-transition: all 0.5s;
-  //   -moz-transition: all 0.5s;
-  //   transition: all 0.5s;
 }
 
 .intro {
@@ -181,25 +141,17 @@ button {
   .box-content {
     width: 100%;
     min-width: 400px;
-    /*min-width: 400px;
-    display: flex;
-    flex-direction: column;*/
   }
   .row {
     flex-direction: column;
   }
   .main-content {
-    // width: 95%;
     margin: 0 auto;
   }
   .wrap {
     min-width: 400px;
     margin: 0 auto;
   }
-
-  // i {
-  //   font-size: 1.5em;
-  // }
 }
 
 .main-content h2 {
@@ -230,7 +182,6 @@ button {
 }
 
 .box {
-  /*height: 10em;*/
   height: auto;
   margin: 6% auto;
   text-align: justify;
@@ -253,30 +204,14 @@ h2 {
   margin-bottom: 0.8em;
 }
 
-// h2 {
-//   text-align: center;
-//
-//   padding-top: 2%;
-// }
-
 .content {
   width: 50%;
   padding: 2%;
-  /*border: 2px solid tomato;*/
 }
 
 .main-content {
   margin-top: 3%;
 }
-
-// .img {
-//   width: 50%;
-//   height: 20em;
-//   background: url('../img/swhen.png');
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
 
 .row-supported {
   display: flex;
@@ -284,33 +219,17 @@ h2 {
   flex-direction: column;
   padding: 0;
   margin: 0;
-  /*height: 30em;*/
-  // width: 100%;
   width: 50%;
-  // margin: 0 auto;
-  // display: flex;
-  // flex-direction: column;
-  // border: 2px solid purple;
   position: absolute;
   bottom: 0;
   left: 25%;
-  // transform: translateX(0, -50%);
-  // left: 7%;
 }
 
 .icons {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   width: 50%;
-  // height: 7em;
-  // height: auto;
-  // background: rgba(255, 255, 255, 0.5);
-  // border-top-right-radius: 2em;
-  // border-top-left-radius: 2em;
   padding: 0;
   & a {
     padding: 0;
@@ -327,8 +246,6 @@ h2 {
 
   & img {
     margin: 0 auto;
-    // padding-top: 1%;
-    // padding-bottom: 1%;
     width: 66px;
     height: 66px;
     display: flex;
@@ -362,7 +279,6 @@ i:hover {
   transform: scale(1.3);
 }
 
-
 .social-media {
   width: 100%;
   height: 200px;
@@ -384,7 +300,6 @@ i:hover {
 
 .icon-icon {
   margin: 0 auto;
-  // border: 2px solid red;
   text-align: center;
 }
 
@@ -398,9 +313,7 @@ i:hover {
 }
 
 .rights {
-  // width: 50%;
   margin: 0 auto;
-  // border: 2px solid red;
   text-align: center;
   margin-top: 5em;
 }
@@ -409,7 +322,6 @@ i:hover {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /*border: 2px solid hotpink;*/
   margin: 0 auto;
   padding-bottom: 3%;
 }
