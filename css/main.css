@@ -9,6 +9,7 @@
 body {
   font-family: 'Archivo Narrow', sans-serif;
   font-weight: lighter;
+  font-weight: 200;
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -132,6 +133,30 @@ button {
   .wrap {
     min-width: 400px;
     margin: 0 auto; } }
+.main-content h2 {
+  color: #101010;
+  font-weight: 300;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 1em;
+  padding-top: 0.8em; }
+
+.small-box {
+  background: #30ABDF;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 50%; }
+
+.story-content {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.1em; }
+
 .box {
   /*height: 10em;*/
   height: auto;
@@ -184,6 +209,8 @@ h2 {
     margin-right: 2%; }
     .icons a:last-child {
       margin-right: 0; }
+  .icons .not-ready {
+    opacity: 0.4; }
   .icons img {
     margin: 0 auto;
     width: 66px;
@@ -211,6 +238,35 @@ i:hover {
   -webkit-tranform: scale(1.3);
   -moz-transform: scale(1.3);
   transform: scale(1.3); }
+
+.social-media {
+  width: 100%;
+  height: 200px;
+  background: #30ABDF; }
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  height: 80px;
+  width: 18%;
+  margin: 0 auto;
+  background: white;
+  border-bottom-left-radius: 1.3em;
+  border-bottom-right-radius: 1.3em; }
+
+.icon-icon {
+  margin: 0 auto;
+  text-align: center; }
+
+.icon-icon img {
+  width: 20%;
+  margin-right: 2%; }
+
+.rights {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3.5em; }
 
 .faq {
   display: flex;
