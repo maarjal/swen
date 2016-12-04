@@ -388,12 +388,13 @@ i:hover {
   text-align: center;
 }
 
+#insta {
+  margin-right: 0;
+}
+
 .icon-icon img {
   width: 20%;
-  margin-right: 2%;
-  &:last-child {
-    // margin-right: 0;
-  }
+  margin-right: 0.8em;
 }
 
 .rights {
@@ -401,7 +402,7 @@ i:hover {
   margin: 0 auto;
   // border: 2px solid red;
   text-align: center;
-  margin-top: 3.5em;
+  margin-top: 5em;
 }
 
 .faq {
