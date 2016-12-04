@@ -40,8 +40,7 @@ nav img {
   justify-content: center;
   padding-right: 0;
   margin-right: 0;
-  width: 25%;
-  border: 2px solid red; }
+  width: 25%; }
   .nav-links p {
     display: flex;
     color: white;
@@ -63,7 +62,7 @@ nav p {
 
 header {
   opacity: 0.8;
-  height: 35em;
+  height: 34em;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -73,9 +72,10 @@ header {
   text-align: center; }
 
 .header {
+  width: 100%;
   background: url("../img/landing_valgega.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover; }
 
 h1 {
@@ -146,7 +146,10 @@ h3 {
 
 h2 {
   color: white;
-  font-size: 36px; }
+  font-size: 36px;
+  padding-bottom: 5%;
+  margin: 0;
+  margin-bottom: 3%; }
 
 .content {
   width: 50%;
@@ -160,27 +163,35 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 0;
+  margin: 0;
   /*height: 30em;*/
   width: 50%;
-  margin: 0 auto;
-  border: 2px solid purple;
   position: absolute;
   bottom: 0;
-  transform: translateX(0, -50%); }
+  left: 25%; }
 
 .icons {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   width: 50%;
-  height: 7em;
   padding: 0; }
+  .icons a {
+    padding: 0;
+    margin: 0;
+    margin-right: 2%; }
+    .icons a:last-child {
+      margin-right: 0; }
   .icons img {
     margin: 0 auto;
     width: 66px;
     height: 66px;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-right: 2%;
+    padding-bottom: 3%;
+    margin-bottom: 3%; }
     .icons img:last-child {
       color: pink;
       margin-right: 0; }
